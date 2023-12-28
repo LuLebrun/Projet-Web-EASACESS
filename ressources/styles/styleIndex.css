@@ -1,0 +1,126 @@
+header {
+  background-color: #345771; /* Changez cette couleur pour celle que vous souhaitez */
+  text-align: center; /* Centre le contenu du header */
+  padding: 10px 0; /* Ajoute un peu d'espace autour du contenu */
+  width: 100%;
+  padding: 2%;
+
+}
+
+header img {
+  height: 130px; /* ou la taille que vous souhaitez pour votre logo */
+  width: auto; /* maintient l'aspect ratio de l'image */
+  border-radius: 50%;
+}
+
+.divBouton input[type="submit"],
+.divBouton button {
+  background-color: #f0f0f0; /* Couleur de fond du bouton */
+  color: #000; /* Couleur du texte du bouton */
+  padding: 10px 20px; /* Espacement intérieur pour rendre le bouton plus grand */
+  border: none; /* Supprime la bordure par défaut */
+  border-radius: 20px; /* Arrondit les coins du bouton */
+  font-size: 16px; /* Taille du texte */
+  cursor: pointer; /* Change le curseur lorsque vous survolez le bouton */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre */
+  margin: 15px; /* Espacement autour du bouton */
+  transition: background-color 0.3s ease; /* Anime le changement de couleur de fond */
+}
+
+.divBouton input[type="submit"]:hover,
+.divBouton button:hover {
+  background-color: #e0e0e0; /* Couleur de fond du bouton au survol */
+}
+
+
+
+.divBouton input[type="submit"]:hover {
+  background-color: #e0e0e0; /* Couleur de fond du bouton au survol */
+}
+
+.divBouton {
+  text-align: center; /* Centre les boutons dans la div */
+  /* Autres styles nécessaires pour positionner la div elle-même, si nécessaire */
+}
+
+
+
+.divImageDeFond {
+  width: 100%;
+  overflow: hidden; /* pour s'assurer que l'image ne dépasse pas du conteneur */
+}
+
+.divImageDeFond img {
+  width: 100%;
+  height: auto; /* Ajuste la hauteur tout en conservant le ratio d'aspect de l'image */
+  
+}
+
+.divFondBlancBas {
+  padding: 5em 0; /* Par exemple, cela donnerait un padding vertical sans affecter les côtés horizontaux */
+}
+
+
+
+
+footer {
+  background-color: #345771;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed; /* Pour eviter le scroll de la page */
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-link {
+  display: inline-block; /* ou 'block' si vous voulez que chaque lien soit sur une ligne séparée */
+  margin: 0 10px; /* ajustez l'espacement selon vos besoins */
+  color: white; /* ou toute autre couleur de texte souhaitée */
+  text-decoration: none; /* retire le soulignement par défaut des liens */
+}
+
+.footer-link:hover {
+  text-decoration: underline; /* ajoute un soulignement au survol pour indiquer qu'il s'agit d'un lien */
+}
+
+/* Style pour le modal background */
+.modal {
+  display: none; /* Masqué par défaut */
+  position: fixed; /* Position fixe par rapport à la fenêtre de visualisation */
+  z-index: 1; /* S'assure que le modal est au-dessus des autres éléments */
+  left: 0;
+  top: 0;
+  width: 100%; /* Largeur totale */
+  height: 100%; /* Hauteur totale */
+  overflow: auto; /* Permet le scroll si nécessaire */
+  background-color: rgb(0,0,0); /* Fond noir */
+  background-color: rgba(0,0,0,0.4); /* Noir avec opacité */
+}
+
+/* Style pour le contenu modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% du haut et centré horizontalement */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%; /* Largeur du contenu modal */
+
+  
+}
+
+/* Style pour le bouton de fermeture */
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+

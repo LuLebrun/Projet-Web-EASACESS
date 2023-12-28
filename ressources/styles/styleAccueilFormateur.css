@@ -1,0 +1,115 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+header {
+    background-color: #345771;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header img {
+    height: 130px; /* ou la taille que vous souhaitez pour votre logo */
+    width: auto; /* maintient l'aspect ratio de l'image */
+    border-radius: 50%;
+}
+
+#seDeconnecter {
+    background-color: #f44336; /* Rouge pour la déconnexion */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; /* Bordures légèrement arrondies */
+}
+
+#seDeconnecter:hover {
+    background-color: #c0392b; /* Rouge plus foncé au survol */
+}
+
+.banniereBienvenue {
+    background-color: #345771;
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.banniereBienvenue h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em; /* Grande taille pour le titre */
+}
+
+.banniereBienvenue p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+
+.conteneurImage {
+    display: flex;
+    justify-content: center; /* Centre les cartes horizontalement */
+    align-items: center; /* Centre les cartes verticalement */
+    gap: 100px; /* Espacement entre les cartes */
+    height: calc(100vh - 300px);
+}
+
+.image-card {
+    position: relative;
+    width: 40%; /* Taille fixe pour les deux cartes */
+    cursor: pointer;
+    display: flex; /* Utilise flexbox pour centrer le texte sur l'image */
+    justify-content: center; /* Centre le texte horizontalement */
+    align-items: center; /* Centre le texte verticalement */
+    overflow: hidden; /* Cache tout débordement */
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease; /* Animation pour l'effet de zoom */
+}
+
+.image-card:hover img {
+    transform: scale(1.05); /* Zoom léger au survol */
+}
+
+.image-text {
+    position: absolute;
+    bottom: 250px; /* Position du texte en bas de l'image */
+    left: 350px; /* Position du texte à gauche de l'image */
+    color: white;
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px; /* Bordures légèrement arrondies */
+}
+/* ... (autres styles CSS) ... */
+
+
+footer {
+    background-color: #345771;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed; /* Pour eviter le scroll de la page */
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-link {
+    display: inline-block; /* ou 'block' si vous voulez que chaque lien soit sur une ligne séparée */
+    margin: 0 10px; /* ajustez l'espacement selon vos besoins */
+    color: white; /* ou toute autre couleur de texte souhaitée */
+    text-decoration: none; /* retire le soulignement par défaut des liens */
+}
+
+.footer-link:hover {
+    text-decoration: underline; /* ajoute un soulignement au survol pour indiquer qu'il s'agit d'un lien */
+}

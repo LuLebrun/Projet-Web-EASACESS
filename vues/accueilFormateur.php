@@ -18,17 +18,17 @@ session_start();
     
     <div class="banniereBienvenue">
         <h1>ACCUEIL FORMATEUR</h1>
-        <p>Bienvenue <?php echo htmlspecialchars($_SESSION['prenom']) . ' ' . htmlspecialchars($_SESSION['nom']); ?></p>
+        <p>Bienvenue <?php echo htmlspecialchars($_SESSION['prenom']) . ' ' . htmlspecialchars($_SESSION['nom']); ?> (formateur)</p>
     </div>
 
 <!-- ... (autres éléments HTML) ... -->
 
 <div class="conteneurImage">
-    <div class="image-card" onclick="window.location.href='/gestion_systemes.html';">
+    <div class="image-card" onclick="window.location.href='/EASACESS/vues/interfaceGestionDesSystemes.php';">
         <img src="/EASACESS/ressources/images/image_electrotechnique.jpg" alt="Gestion des systèmes">
         <div class="image-text">GESTION DES SYSTÈMES</div>
     </div>
-    <div class="image-card" onclick="window.location.href='/gestion_apprentis.html';">
+    <div class="image-card" onclick="window.location.href='/EASACESS/vues/interfaceGestionDesApprentis.php';">
         <img src="/EASACESS/ressources/images/image_gestion_apprentis.jpg" alt="Gestion des apprentis">
         <div class="image-text">GESTION DES APPRENTIS</div>
     </div>

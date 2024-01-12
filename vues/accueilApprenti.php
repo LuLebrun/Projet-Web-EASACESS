@@ -17,7 +17,7 @@ session_start();
     
     <div class="banniereBienvenue">
         <h1>ACCUEIL APPRENTIS</h1>
-        <p>Bienvenue <?php echo htmlspecialchars($_SESSION['prenom']) . ' ' . htmlspecialchars($_SESSION['nom']); ?></p>
+        <p>Bienvenue <?php echo htmlspecialchars($_SESSION['prenom']) . ' ' . htmlspecialchars($_SESSION['nom']); ?> (apprenti)</p>
     </div>
 
 <!-- ... (autres éléments HTML) ... -->

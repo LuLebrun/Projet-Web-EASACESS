@@ -1,0 +1,120 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+header {
+    background-color: #345771;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header img {
+    height: 130px; /* ou la taille que vous souhaitez pour votre logo */
+    width: auto; /* maintient l'aspect ratio de l'image */
+    border-radius: 50%;
+}
+
+#seDeconnecter {
+    background-color: #f44336; /* Rouge pour la déconnexion */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; /* Bordures légèrement arrondies */
+}
+
+#seDeconnecter:hover {
+    background-color: #c0392b; /* Rouge plus foncé au survol */
+}
+
+.banniereBienvenue {
+    background-color: #345771;
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.banniereBienvenue h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em; /* Grande taille pour le titre */
+}
+
+.banniereBienvenue p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+/* Reste du CSS */
+
+/* Style pour le conteneur de la table */
+.listeApprentis {
+    overflow-x: auto;
+    margin: 20px auto; /* Centre le conteneur */
+    background: white;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Vous pouvez ajuster ceci selon la largeur désirée */
+    max-width: 1200px; /* Maximum width of the container */
+}
+
+/* Style pour la table elle-même */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ddd; /* Ajout d'une bordure pour le tableau */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e8f0fe;
+}
+
+/* Reste du CSS */
+
+
+
+footer {
+    background-color: #345771;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed; /* Pour eviter le scroll de la page */
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-link {
+    display: inline-block; /* ou 'block' si vous voulez que chaque lien soit sur une ligne séparée */
+    margin: 0 10px; /* ajustez l'espacement selon vos besoins */
+    color: white; /* ou toute autre couleur de texte souhaitée */
+    text-decoration: none; /* retire le soulignement par défaut des liens */
+}
+
+.footer-link:hover {
+    text-decoration: underline; /* ajoute un soulignement au survol pour indiquer qu'il s'agit d'un lien */
+}
+
+

@@ -6,7 +6,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil Formateur</title>
+    <title>Accueil Formateur</title>  
     <link rel="stylesheet" href="/EASACESS/ressources/styles/styleAccueilFormateur.css">
 </head>
 <body>
@@ -21,7 +21,7 @@ session_start();
         <p>Bienvenue <?php echo htmlspecialchars($_SESSION['prenom']) . ' ' . htmlspecialchars($_SESSION['nom']); ?> (formateur)</p>
     </div>
 
-<!-- ... (autres éléments HTML) ... -->
+
 
 <div class="conteneurImage">
     <div class="image-card" onclick="window.location.href='/EASACESS/vues/interfaceGestionDesSystemes.php';">
@@ -34,12 +34,12 @@ session_start();
     </div>
 </div>
 
-<!-- ... (autres éléments HTML) ... -->
+
 
 
     <footer>
-        <a href="chemin_vers_la_politique_de_confidentialite.html" class="footer-link">Politiques de confidentialité</a>
-        <a href="chemin_vers_les_mentions_legales.html" class="footer-link">Mentions légales</a>
+        <a href="/EASACESS/vues/mentionsLegales.html" class="footer-link">Mentions légales</a>
+        <a href="/EASACESS/vues/politiquesDeConfidentialite.html" class="footer-link">Politiques de confidentialité</a>
     </footer>
 </body>
 </html>

@@ -1,30 +1,37 @@
 header {
-  background-color: #345771; /* Changez cette couleur pour celle que vous souhaitez */
-  text-align: center; /* Centre le contenu du header */
-  padding: 10px 0; /* Ajoute un peu d'espace autour du contenu */
-  width: 100%;
-  padding: 2%;
-
+  background-color: #345771;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 header img {
-  height: 130px; /* ou la taille que vous souhaitez pour votre logo */
+  height: 120px; /* ou la taille que vous souhaitez pour votre logo */
   width: auto; /* maintient l'aspect ratio de l'image */
-  border-radius: 50%;
+
 }
 
 .divBouton input[type="submit"],
 .divBouton button {
-  background-color: #f0f0f0; /* Couleur de fond du bouton */
-  color: #000; /* Couleur du texte du bouton */
+  background-color: #c8c6c6; /* Couleur de fond du bouton */
+  color: #ffffff; /* Couleur du texte du bouton */
   padding: 10px 20px; /* Espacement intérieur pour rendre le bouton plus grand */
   border: none; /* Supprime la bordure par défaut */
-  border-radius: 20px; /* Arrondit les coins du bouton */
+  border-radius: 10px; /* Arrondit les coins du bouton */
   font-size: 16px; /* Taille du texte */
   cursor: pointer; /* Change le curseur lorsque vous survolez le bouton */
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre */
   margin: 15px; /* Espacement autour du bouton */
   transition: background-color 0.3s ease; /* Anime le changement de couleur de fond */
+}
+
+.divBouton h2{
+    background-color: #345771;
+    color: white;
+    padding: 1%;
+
+
 }
 
 .divBouton input[type="submit"]:hover,
@@ -34,31 +41,55 @@ header img {
 
 
 
-.divBouton input[type="submit"]:hover {
-  background-color: #e0e0e0; /* Couleur de fond du bouton au survol */
-}
+
 
 .divBouton {
   text-align: center; /* Centre les boutons dans la div */
-  /* Autres styles nécessaires pour positionner la div elle-même, si nécessaire */
+  /* Autres styles nécessaires pour positionner la div elle-même, si nécessaire */;
 }
+
 
 
 
 .divImageDeFond {
   width: 100%;
   overflow: hidden; /* pour s'assurer que l'image ne dépasse pas du conteneur */
+  position: relative;
 }
 
 .divImageDeFond img {
   width: 100%;
   height: auto; /* Ajuste la hauteur tout en conservant le ratio d'aspect de l'image */
+  opacity: 0.4;
   
 }
 
 .divFondBlancBas {
   padding: 5em 0; /* Par exemple, cela donnerait un padding vertical sans affecter les côtés horizontaux */
 }
+
+.divImageDeFond {
+  position: relative; /* Assurez-vous que le parent a une position relative pour positionner absolument le texte par rapport à lui */
+}
+
+.texteSurImage {
+  position: absolute; /* Position absolue pour superposer le texte sur l'image */
+  top: 50%; /* Centre verticalement */
+  left: 50%; /* Centre horizontalement */
+  transform: translate(-50%, -50%); /* Assure que le texte est bien centré par rapport à ses coordonnées */
+  color: white; /* Couleur du texte */
+  font-size: 2.2em; /* Taille du texte */
+  text-align: center; /* Alignement du texte */
+  max-width: 80%; /* Maximum width of the text block */
+  background: -webkit-linear-gradient(45deg, #d55f5f, #345771); 
+  /* background-color: #000; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Assurez-vous que le texte prend la couleur du dégradé */
+  z-index: 10; /* S'assure que le texte est au-dessus de l'image */
+  font-weight: 200;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
 
 
 
@@ -97,6 +128,7 @@ footer {
   background-color: rgb(0,0,0); /* Fond noir */
   background-color: rgba(0,0,0,0.4); /* Noir avec opacité */
 }
+
 
 /* Style pour le contenu modal */
 .modal-content {

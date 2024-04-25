@@ -17,9 +17,9 @@ session_start();
     </header>
     
     <div class="banniereBienvenue">
-        <h1>GESTION DES SYSTÈMES</h1>
-        <p>Toujours sur le profil de <?php echo htmlspecialchars($_SESSION['prenom']) . ' ' . htmlspecialchars($_SESSION['nom']); ?> (formateur)</p>
-        <button type="button" id="retour" onclick="window.location.href='/EASACESS/vues/accueilFormateur.php'">retour</button>
+        <h1>DOCUMENTS PEDAGOGIQUES ET SYSTÈMES</h1>
+        <p>Toujours sur le profil de <?php echo htmlspecialchars($_SESSION['prenom']) . ' ' . htmlspecialchars($_SESSION['nom']); ?> (apprenti)</p>
+        <button type="button" id="retour" onclick="window.location.href='/EASACESS/vues/accueilApprenti.php'">retour</button>
     </div>
 
     <div class="conteneurSystemes">
@@ -41,7 +41,7 @@ session_start();
 
     <footer>
         <a href="/EASACESS/vues/mentionsLegales.html" class="footer-link">Mentions légales</a>    
-        <a href="/EASACESS/vues/politiquesDeConfidentialite.html" class="footer-link">Politiques de confidentialité</a>
+        <a href="/EASACESS/vues/politiqueDeConfidentialite.html" class="footer-link">Politique de confidentialité</a>
     </footer>
 </body>
 </html>

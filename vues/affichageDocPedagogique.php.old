@@ -1,0 +1,55 @@
+<!-- Consulter la documentation d’un système:l’apprentis sélectionne un système et demande l’affichage d’un document particulier--> 
+
+<?php include_once('../controleurs/gestionDesSystemes.php');
+//Instructions pour récuperer la variable(nom_systeme) envoye par la page descedent (Test_systeme.php)
+$recupSysteme=$_GET['Nom_du_systeme'];
+?>
+
+<?php $documents = recupDocP($recupSysteme); 
+   // print_r ($documents);
+?>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affichage document pedagogique</title>
+    <link rel="stylesheet" href="../ressources/styles/styleTest.css">
+</head>
+<body>
+
+    <header>
+        <img src="/EASACESS/ressources/images/logo_aforp.png" alt="Logo AFORP">
+        <button type="button" id="seDeconnecter" onclick="window.location.href='/EASACESS/controleurs/deconnexion.php'">Se déconnecter</button>
+    </header>
+
+    <div class="banniereBienvenue">
+        <h1>DOCUMENTS PEDAGOGIQUES</h1>
+        <p>Système <?php echo htmlspecialchars($_SESSION['prenom']) . ' ' . htmlspecialchars($_SESSION['nom']); ?> (apprenti)</p>
+    </div> 
+
+<!-- Fonctionnalité : Afficher la liste des documents pédagogique -->
+
+        <section class="margeHaut">
+            <?php foreach ($documents as $document) : ?>
+            <section class="calqueImg">
+                <section class="carte">
+                    <section class="conteneur">
+                        <img class="img_systeme" src="<?php echo '../ressources/images/document.png'?>">
+                        <span class="texte"><?php echo $document["Nom_fichier"]?></span>
+                        <a href="../EASACESS/vues/affichageDocPedagogique.php"><img src="../EASACESS/ressources/images/manuel-e8-jura.pdf</section>"></a>;
+                    </section>   
+                </section>
+            </section>
+            <?php endforeach ?>
+        </section>
+
+
+<footer class="footer">
+        <a href="/EASACESS/vues/mentionsLegales.html" class="footer-link">Mentions légales</a>
+        <a href="/EASACESS/vues/politiqueDeConfidentialite.html" class="footer-link">Politique de confidentialité</a>
+    </footer>
+    
+</body>
+</html>

@@ -7,24 +7,27 @@ body, html {
 header {
     background-color: #345771;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 10px 20px;
 }
 
 header img {
-    height: 130px; /* ou la taille que vous souhaitez pour votre logo */
+    height: 120px; /* ou la taille que vous souhaitez pour votre logo */
     width: auto; /* maintient l'aspect ratio de l'image */
-    border-radius: 50%;
+    margin-left: auto;
+    transform: translateX(22%);
+    
 }
 
 #seDeconnecter {
-    background-color: #f44336; /* Rouge pour la déconnexion */
+    background-color: #f44336; /* Red for logout */
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5px; /* Bordures légèrement arrondies */
+    border-radius: 5px; 
+    margin-left: auto;
 }
 
 #seDeconnecter:hover {

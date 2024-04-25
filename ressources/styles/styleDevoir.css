@@ -122,9 +122,14 @@ footer {
 
 
 /* Style général pour les sections */
-#ajoutApprentiSection, #supprimerApprentiSection {
+#DevoirSection, #supprimerApprentiSection {
     margin: 20px;
-    padding: 20px;
+    padding: 5px;
+    width: 920px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
     background-color: #ededed;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -168,6 +173,9 @@ input[type="submit"]:hover {
     background-color: #4cae4c; /* Couleur un peu plus foncée lors du survol */
 }
 
+
+
+
 /* Style spécifique pour le bouton de suppression */
 #supprimerApprentiSection input[type="submit"] {
     background-color: #d9534f; /* Couleur rouge pour supprimer */
@@ -207,5 +215,3 @@ input[type="submit"] {
     max-width: 100%;
 }
 }
-
-
